@@ -9,7 +9,7 @@ To run sunny.py, you need specifically structured JSON file. The JSON file will 
 
 ### Additional Files
 
-Add various files located in the HDSI Capstone 2023-2024 Sharepoint Documents/Data folder to the data directory. This is needed in order to run `scripts/collect_images.py`:
+No additional files are needed as the files needed have already been added to the repository. The files below is needed in order to run `scripts/collect_images.py`:
 * `joshua_structures.json`
 * `kevin_structures.json`
 * `jonathan_structures.json`

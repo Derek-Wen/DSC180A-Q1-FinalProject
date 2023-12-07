@@ -8,12 +8,13 @@ Data for this project is collected from [Google Street View Static API](https://
 To run sunny.py, you need specifically structured JSON file. The JSON file will have 2 main item(OH and UG) and each should be the list of 5 different pole and within each pole, there should be 'loc' for lat and long 'heading' for heading direction of the image.
 
 ### Additional Files
-
-No additional files are needed as the files needed have already been added to the repository. The files below is needed in order to run `scripts/collect_images.py`:
+The files below are needed in order to run `scripts/collect_images.py`:
 * `joshua_structures.json`
 * `kevin_structures.json`
 * `jonathan_structures.json`
 * `structure_coordinates.json`
+
+However, files needed have already been added to the repository.
 
 ## Setup
 
@@ -24,7 +25,7 @@ conda env create -f environment.yml
 ```
 
 ### Credentials
-Store credentials in `.env` file and load using [python-dotenv](https://pypi.org/project/python-dotenv/).
+You will need a Google Maps API key and a Google Secret Key to store in "API_KEY" and "SECRET" respectively in `.env`. Store credentials in `.env` file and load using [python-dotenv](https://pypi.org/project/python-dotenv/).
 
 ### Training Data
 Create training data by running the following after setup is complete:
@@ -35,7 +36,7 @@ python scripts/collect_images.py
 # Project Structure
 
 ```
-├── data/               <- Local data files only (do not commit)
+├── data/               <- Local data files only
 │
 ├── notebooks/          <- Jupyter notebooks
 │

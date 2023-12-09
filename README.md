@@ -33,6 +33,24 @@ Create training data by running the following after setup is complete:
 python scripts/collect_images.py
 ```
 
+# DETR (Detection Transformer) Model
+A [DETR model](https://github.com/woctezuma/finetune-detr) was modified to fit our data set and image labeling needs.
+
+[Google Colab is recommended and should be copied and saved in your personal drive.](https://colab.research.google.com/drive/1GikatFXOZD20bXc-qNZIvU0uGiuBNrh9?usp=sharing)
+
+After running all of the cells before the section **Check the dataset after it was pre-processed for fine-tuning**, we expect the DETR directory structure to be the following:
+```
+path/to/coco/data/poles/
+├ annotations/  # JSON annotations
+│  ├ annotations/custom_train.json
+│  └ annotations/custom_val.json
+├ train2017/    # training images
+└ val2017/      # validation images
+```
+`custom_train.json`, `custom_val.json`, and all of the training and validations images are in the data folder. You will have to add these files into the DETR directory structure.
+
+In summary, run all of the cells before the section **Check the dataset after it was pre-processed for fine-tuning**. Afterwards, add in `custom_train.json` and `custom_val.json` in the **annotations**, training images in **train2017**, and validation images in **val2017**. Run the rest of the cells once you have added the necessary files
+
 # Project Structure
 
 ```
